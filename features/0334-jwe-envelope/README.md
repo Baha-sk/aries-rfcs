@@ -193,6 +193,10 @@ With the recipients headers representing an ephemeral key that can be used to de
 
 The function `XC20P` in the example above is defined as the XChahcha20Poly1035 cipher function. This can be replaced by the A256GCM cipher function.
 
+### Concrete examples
+
+See concrete [anoncrypt](anoncrypt-examples.md) and [authcrypt](authcrypt-examples.md) examples
+
 ## JWE detached mode nested envelopes
 
 There are situations in DIDComm messaging where an envelope could be nested inside another envelope -- particularly [RFC 46: Mediators and Relays](https://github.com/hyperledger/aries-rfcs/tree/master/concepts/0046-mediators-and-relays). Normally nesting envelopes implies that the envelope payloads will incur additional encryption and encoding operations at each parent level in the nesting. This section describes a mechanism to extract the nested payloads outside the nesting structure to avoid these additional operations.
